@@ -18,9 +18,6 @@ if ($out['success']) {
 	$query = $mysqli->query("DELETE FROM dbcomment WHERE id = $id");
 }
 
-
-// Устанавливаем заголовот ответа в формате json
 header('Content-Type: text/json; charset=utf-8');
 
-// Кодируем данные в формат json и отправляем
 echo json_encode($out);

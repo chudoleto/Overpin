@@ -4,7 +4,6 @@
 		$secret = '6Le3eG4UAAAAAOlrDQc6rG9ppWakf2vlwHh3C1RE';
 		$recaptcha_response = isset($_POST['g-recaptcha-response']) ? $_POST['g-recaptcha-response'] : '';
 		
-		// ...
 		$url = 'https://www.google.com/recaptcha/api/siteverify';
 		$data = http_build_query ([
 			'secret' => $secret,
